@@ -1,0 +1,187 @@
+<resources>
+    <string name="app_name">Registrasi Beacon</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="panduan_pengguna">Panduan Pengguna</string>
+    <string name="lupa_password">Lupa Password?</string>
+    <string name="pengguna_baru">Pengguna Baru?</string>
+    <string name="daftar">Daftar</string>
+    <string name="hubungi_kami">Hubungi Kami</string>
+    <string name="tutup">Tutup</string>
+    <string name="nomor_telepon">Nomor Telepon</string>
+    <string name="titik_dua" translatable="false">:</string>
+    <string name="_021_65701116_ext_2221" translatable="false">(021)65701116 ext 2221</string>
+    <string name="nomor_handphone">Nomor Handphone</string>
+    <string name="_08121370037" translatable="false">08121370037</string>
+    <string name="alamat_email">Alamat Email</string>
+    <string name="achmadtoha_basarnas_go_id" translatable="false">achmadtoha@basarnas.go.id</string>
+    <string name="logo_basarnas">Logo BASARNAS</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="batal">Batal</string>
+    <string name="tidak">Tidak</string>
+    <string name="ya">Ya</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="url_buku_panduan" translatable="false">http://10.0.0.194:8099/assets/file/buku_panduan_sirob.basarnas.go.id_2017.pdf</string>
+    <string name="mobile_phone">Mobile Phone</string>
+    <string name="email">Email</string>
+    <string name="fax">Fax</string>
+    <string name="surat_penunjukan">Surat Penunjukan</string>
+    <string name="perusahaan">Perusahaan</string>
+    <string name="perorangan">Perorangan</string>
+    <string name="semua">Semua</string>
+    <string name="kapal">Kapal</string>
+    <string name="pesawat">Pesawat</string>
+    <string name="personal">Personal</string>
+    <string name="beranda">Beranda</string>
+    <string name="profil">Profil</string>
+    <string name="armada">Armada</string>
+    <string name="uji_fungsi">Uji Fungsi</string>
+    <string name="sertifikat">Sertifikat</string>
+    <string name="notifikasi">Notifikasi</string>
+    <string name="nol" translatable="false">0</string>
+    <string name="_9_plus" translatable="false">9+</string>
+    <string name="tidak_ada_beacon">Tidak Ada Beacon</string>
+    <string name="nomor_sertifikat">Nomor Sertifikat</string>
+    <string name="id_beacon">ID Beacon</string>
+    <string name="kategori">Kategori</string>
+    <string name="strip" translatable="false">-</string>
+    <string name="berlaku_sampai">Berlaku Sampai</string>
+    <string name="kadaluarsa_baterai">Kadaluarsa Baterai</string>
+    <string name="status">Status</string>
+    <string name="formulir">Formulir</string>
+    <string name="hasil">Hasil</string>
+    <string name="perpanjangan_perubahan_informasi">Perpanjangan/Perubahan Informasi</string>
+    <string name="kadaluarsa_registrasi">Kadaluarsa Registrasi</string>
+    <string name="tidak_ada_notifikasi">Tidak Ada Notifikasi</string>
+    <string name="tambah">Tambah</string>
+    <string name="pembuat">Pembuat</string>
+    <string name="model">Model</string>
+    <string name="nomor_persetujuan">Nomor Persetujuan</string>
+    <string name="tanggal_kadaluarsa_baterai">Tanggal Kadaluarsa Baterai</string>
+    <string name="dd_mm_yyyy" translatable="false">dd/MM/yyyy</string>
+    <string name="penempatan">Penempatan</string>
+    <string name="call_sign">Call Sign</string>
+    <string name="tanggal_kadaluarsa">Tanggal Kadaluarsa</string>
+    <string name="perpanjang">Perpanjang</string>
+    <string name="reg">Reg</string>
+    <string name="pengguna">Pengguna</string>
+    <string name="nama">Nama</string>
+    <string name="alamat">Alamat</string>
+    <string name="logout">Logout</string>
+    <string name="jenis_perusahaan">Jenis Perusahaan</string>
+    <string name="telp">Telp</string>
+    <string name="tambah_foto">Tambah\nFoto</string>
+    <string name="tambahkan_foto_profil_anda_dengan_menekan_ikon_gambar">Tambahkan foto profil Anda dengan menekan ikon gambar</string>
+    <string name="simpan">Simpan</string>
+    <string name="daftar_penggunaan_personal">Daftar Penggunaan Personal</string>
+    <string name="tidak_ada_armada">Tidak Ada Armada</string>
+    <string name="tambah_beacon">+ Tambah Beacon</string>
+    <string name="ubah">Ubah</string>
+    <string name="hapus">Hapus</string>
+    <string name="registrasi_nbeacon">Registrasi\nBeacon</string>
+    <string name="masukkan_username_anda">Masukkan username Anda</string>
+    <string name="masukkan_password_anda">Masukkan password Anda</string>
+    <string name="username_atau_password_salah">Username atau password salah</string>
+    <string name="terjadi_kesalahan">Terjadi kesalahan</string>
+    <string name="download_panduan">Download Panduan</string>
+    <string name="register">Register</string>
+    <string name="contact_person">Contact Person</string>
+    <string name="masukkan_nama_anda">Masukkan nama Anda</string>
+    <string name="masukkan_alamat_anda">Masukkan alamat Anda</string>
+    <string name="masukkan_nomor_telepon_anda">Masukkan nomor telepon Anda</string>
+    <string name="masukkan_mobile_phone_anda">Masukkan mobile phone Anda</string>
+    <string name="masukkan_email_anda">Masukkan email Anda</string>
+    <string name="selanjutnya">Selanjutnya</string>
+    <string name="company_profile">Company Profile</string>
+    <string name="sudah_punya_akun">Sudah punya akun?</string>
+    <string name="masukkan_nama">Masukkan nama</string>
+    <string name="masukkan_alamat">Masukkan alamat</string>
+    <string name="masukkan_fax">Masukkan Fax</string>
+    <string name="masukkan_email">Masukkan email</string>
+    <string name="browse">Browse</string>
+    <string name="sebelumnya">Sebelumnya</string>
+    <string name="username_telah_digunakan">Username telah digunakan</string>
+    <string name="nomor_telepon_tidak_valid">Nomor telepon tidak valid</string>
+    <string name="mobile_phone_tidak_valid">Mobile phone tidak valid</string>
+    <string name="email_tidak_valid_">Email tidak valid</string>
+    <string name="masukkan_email_anda_untuk_mereset_password">Masukkan email Anda untuk mereset password</string>
+    <string name="password_gagal_direset_email_tidak_sesuai">Password gagal direset, email tidak sesuai</string>
+    <string name="password_berhasil_direset_dan_telah_dikirim_ke_email_anda">Password berhasil direset dan telah dikirim ke email Anda</string>
+    <string name="tentang">Tentang</string>
+    <string name="apakah_yakin_ingin_keluar_">Apakah yakin ingin keluar?</string>
+    <string name="dalam_rangka_meningkatkan_respon_time_badan_sar_nasional_dalam_penanganan_musibah_penerbangan_pelayaran_dan_musibah_lainnya_badan_sar_nasional_mengoperasikan_peralatan_lut_mcc_local_user_terminal_mission_control_center_sebagai_sarana_deteksi_dini_lut_merupakan_ground_segment_dari_cospas_sarsat_yang_berfungsi_untuk_menerima_sinyal_distres_yang_dipancarkan_oleh_beacon"><![CDATA[Dalam rangka meningkatkan respon time Badan SAR Nasional dalam penanganan musibah penerbangan, pelayaran dan musibah lainnya, Badan SAR Nasional mengoperasikan peralatan LUT & MCC (Local User Terminal & Mission Control Center) sebagai sarana deteksi dini. LUT merupakan ground segment dari Cospas-Sarsat yang berfungsi untuk menerima sinyal distres yang dipancarkan oleh Beacon.]]></string>
+    <string name="kontak">Kontak</string>
+    <string name="jalan_angkasa_blok_b_15_kav_2_3_nkemayoran_jakarta_pusat_nindonesia_10720">Jalan Angkasa Blok B.15 KAV 2–3\nKemayoran Jakarta Pusat\nIndonesia 10720</string>
+    <string name="telp_amp_fax"><![CDATA[Telp & Fax]]></string>
+    <string name="tel_62_21_6570_1116_nfax_62_21_6570_1116" translatable="false">Tel : (62-21) 6570 1116\nFax : (62-21) 6570 1116</string>
+    <string name="daftar_sertifikat">Daftar Sertifikat</string>
+    <string name="tidak_ada_sertifikat">Tidak Ada Sertifikat</string>
+    <string name="kadaluarsa">Kadaluarsa</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="data_gagal_disimpan">Data gagal disimpan</string>
+    <string name="data_berhasil_disimpan_username_dan_password_akan_dikirim_ke_email_anda">Data berhasil disimpan, username dan password akan dikirim ke email Anda</string>
+    <string name="sedang_menyimpan_data">Sedang menyimpan data…</string>
+    <string name="sedang_menunggah_file">Sedang mengunggah file…</string>
+    <string name="gagal_mengunggah_berkas">Gagal mengunggah file</string>
+    <string name="aplikasi_ini_digunakan_untuk_mengelola_beacon_elt_epirb_plb_yang_terpasang_pada_pesawat_kapal_atau_personal_n_nuntuk_mendaftarkan_beacon_yang_dibawa_atau_melekat_pada_personal_anda_harus_terlebih_dahulu_mengisi_form_data_penggunaan_personal">Aplikasi ini digunakan untuk mengelola beacon (ELT, EPIRB, PLB) yang terpasang pada Pesawat, Kapal atau Personal.\n\nUntuk mendaftarkan beacon yang dibawa atau melekat pada personal, Anda harus terlebih dahulu mengisi form data penggunaan personal.</string>
+    <string name="data_penggunaan_personal">Data Penggunaan Personal</string>
+    <string name="status_">Status :</string>
+    <string name="perpanjangan_nperubahan_informasi">Perpanjangan/\nPerubahan Informasi</string>
+    <string name="berlaku_s_d">Berlaku s/d</string>
+    <string name="jenis">Jenis</string>
+    <string name="daftar_uji_fungsi">Daftar Uji Fungsi</string>
+    <string name="tidak_ada_uji_fungsi">Tidak Ada Uji Fungsi</string>
+    <string name="uji_fungsi_berhasil_diajukan">Uji fungsi berhasil di ajukan</string>
+    <string name="uji_fungsi_gagal_di_ajukan">Uji fungsi gagal di ajukan</string>
+    <string name="ubah_profil">Ubah Profil</string>
+    <string name="sedang_mengunggah_foto">Sedang mengunggah foto…</string>
+    <string name="perubahan_data_berhasil_disimpan">Perubahan data berhasil disimpan</string>
+    <string name="belum_siap_uji_fungsi">belum siap uji fungsi</string>
+    <string name="siap_uji_fungsi">siap uji fungsi</string>
+    <string name="telah_diuji_fungsi">telah diuji fungsi</string>
+    <string name="terdaftar">Terdaftar</string>
+    <string name="lima_puluh_persen" translatable="false">50%</string>
+    <string name="registrasi_baru_data_sesuai">Registrasi Baru - data sesuai</string>
+    <string name="nol_persen" translatable="false">0%</string>
+    <string name="registrasi_baru_belum_diverifikasi">Registrasi Baru - belum diverifikasi</string>
+    <string name="silahkan_perbaiki_data_anda">Silahkan perbaiki data anda</string>
+    <string name="_tambah_beacon">+ Tambah Beacon</string>
+    <string name="yakin_ingin_hapus_data_ini">Yakin ingin hapus data ini?</string>
+    <string name="penggunaan">Penggunaan</string>
+    <string name="penggunaan_spesifik">Penggunaan Spesifik</string>
+    <string name="tipe">Tipe</string>
+    <string name="data_tambahan">Data Tambahan</string>
+    <string name="ubah_penggunaan_personal">Ubah Penggunaan Personal</string>
+    <string name="penggunaan_personal">Penggunaan Personal</string>
+    <string name="n_a" translatable="false">N/A</string>
+    <string name="komersial">Komersial</string>
+    <string name="non_komersial">Non Komersial</string>
+    <string name="komersial_dan_non_komersial">Komersial dan Non-Komersial</string>
+    <string name="militer">Militer</string>
+    <string name="pemerintah">Pemerintah</string>
+    <string name="privat">Private</string>
+    <string name="lainnya">Lainnya</string>
+    <string name="berburu">Berburu</string>
+    <string name="berkemah">Berkemah</string>
+    <string name="memancing">Memancing</string>
+    <string name="kendaraan_darat">Kendaraan Darat</string>
+    <string name="tidak_ada">Tidak Ada</string>
+    <string name="data_beacon">Data Beacon</string>
+    <string name="penggunaan_untuk">Penggunaan untuk</string>
+    <string name="jenis_beacon">Jenis Beacon</string>
+    <string name="kontak_darurat">Kontak Darurat</string>
+    <string name="nama_kontak_darurat_24_jam_utama">Nama Kontak Darurat 24 Jam Utama</string>
+    <string name="telepon_rumah">Telepon Rumah</string>
+    <string name="telepon_kantor">Telepon Kantor</string>
+    <string name="seluler">Seluler</string>
+    <string name="nama_kontak_darurat_24_jam_alternatif">Nama Kontak Darurat 24 Jam Alternatif</string>
+    <string name="pendukung">Pendukung</string>
+    <string name="file_surat_permohonan">File Surat Permohonan</string>
+    <string name="informasi_registrasi_beacon_dari_ditjen_hubud">Informasi Registrasi Beacon dari Ditjen Hubud</string>
+    <string name="nama_dan_tanda_tangan">Nama dan Tanda Tangan</string>
+    <string name="plb" translatable="false">PLB</string>
+    <string name="form_registrasi_baru">Form Registrasi Baru</string>
+    <string name="form_perubahan_informasi">Form Perubahan Informasi</string>
+    <string name="id_beacon_tidak_valid">ID Beacon tidak valid</string>
+</resources>

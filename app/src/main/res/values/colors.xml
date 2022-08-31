@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_badge">#FFCC0000</color>
+    <color name="background_blue">#FF4E96DE</color>
+    <color name="background_gray">#FFF1F1F1</color>
+    <color name="background_gray_dark">#FFBDBDBD</color>
+    <color name="background_gray_light">#FFD7D7D7</color>
+    <color name="background_green">#FF00DB30</color>
+    <color name="background_navy">#FF2C3E50</color>
+    <color name="background_navy_disabled">#802C3E50</color>
+    <color name="background_orange">#FFFF7B26</color>
+    <color name="background_orange_disabled">#4DFF7B26</color>
+    <color name="background_red">#FFE96060</color>
+    <color name="background_white">#FFFFFFFF</color>
+    <color name="border_black">#FF000000</color>
+    <color name="border_error">#FFEB3D3D</color>
+    <color name="border_gray">#FFA1A1A1</color>
+    <color name="border_gray_light">#FFD7D7D7</color>
+    <color name="border_orange">#FFFF7B26</color>
+    <color name="border_white">#FFFFFFFF</color>
+    <color name="icon_black">#FF000000</color>
+    <color name="icon_gray">#FFA1A1A1</color>
+    <color name="icon_launcher_background">#FFFFFFFF</color>
+    <color name="icon_orange">#FFFF7B26</color>
+    <color name="icon_white">#FFFFFFFF</color>
+    <color name="text_black">#FF000000</color>
+    <color name="text_error">#FFEB3D3D</color>
+    <color name="text_gray">#FFA1A1A1</color>
+    <color name="text_gray_dark">#FFBDBDBD</color>
+    <color name="text_navy">#FF2C3E50</color>
+    <color name="text_orange">#FFFF7B26</color>
+    <color name="text_white">#FFFFFFFF</color>
+</resources>

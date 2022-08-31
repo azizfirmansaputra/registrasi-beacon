@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginStart="0dp"
+    android:layout_marginEnd="0dp"
+    app:cardBackgroundColor="@color/background_white"
+    app:cardCornerRadius="5dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="10dp"
+    app:strokeColor="@color/border_black"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TVIDBeacon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text=""
+                android:textColor="@color/text_navy"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CVStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardBackgroundColor="@color/background_green"
+                app:cardCornerRadius="6dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="false"
+                app:contentPadding="0dp">
+
+                <TextView
+                    android:id="@+id/TVStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text=""
+                    android:textColor="@color/text_white"
+                    android:textSize="13sp"
+                    android:textStyle="normal"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageButton
+                android:id="@+id/IBBeacon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/icon_dots"
+                app:tint="@color/icon_gray"
+                tools:ignore="ContentDescription"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TVNoSertifikat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="7dp"
+            android:gravity="start"
+            android:text=""
+            android:textColor="@color/text_gray"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="7dp"
+            tools:ignore="RelativeOverlap">
+
+            <TextView
+                android:id="@+id/TVBerlakuSampai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:gravity="start"
+                android:text=""
+                android:textColor="@color/text_gray"
+                android:textSize="13sp"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/TVKadaluarsaBaterai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="start"
+                android:text=""
+                android:textColor="@color/text_gray"
+                android:textSize="13sp"
+                android:textStyle="normal"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TVDeskirpsiStatusTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:text=""
+                android:textColor="@color/text_black"
+                android:textSize="13sp"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/TVDeskripsiStatus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text=""
+                android:textColor="@color/text_black"
+                android:textSize="13sp"
+                android:textStyle="normal"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CVPerpanjanganPerubahan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardBackgroundColor="@color/background_blue"
+                app:cardCornerRadius="7dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="false"
+                app:contentPadding="0dp">
+
+                <TextView
+                    android:id="@+id/TVPerpanjanganPerubahan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="3dp"
+                    android:text="@string/perpanjangan_nperubahan_informasi"
+                    android:textColor="@color/text_white"
+                    android:textSize="13sp"
+                    android:textStyle="normal"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

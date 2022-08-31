@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bnvBeranda"
+        android:icon="@drawable/icon_home"
+        android:title="@string/beranda"/>
+
+    <item
+        android:id="@+id/bnvArmada"
+        android:icon="@drawable/icon_road"
+        android:title="@string/armada"/>
+
+    <item
+        android:id="@+id/bnvUjiFungsi"
+        android:icon="@drawable/icon_clipboard"
+        android:title="@string/uji_fungsi"/>
+
+    <item
+        android:id="@+id/bnvSertifikat"
+        android:icon="@drawable/icon_certificate"
+        android:title="@string/sertifikat"/>
+
+    <item
+        android:id="@+id/bnvProfil"
+        android:icon="@drawable/icon_profile"
+        android:title="@string/profil"/>
+
+</menu>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/background_white"
+    tools:context=".mainmenu.beranda.BerandaFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardBackgroundColor="@color/background_white"
+                app:cardCornerRadius="7dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="10dp"
+                app:strokeColor="@color/border_gray_light"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="start"
+                        android:justificationMode="inter_word"
+                        android:text="@string/aplikasi_ini_digunakan_untuk_mengelola_beacon_elt_epirb_plb_yang_terpasang_pada_pesawat_kapal_atau_personal_n_nuntuk_mendaftarkan_beacon_yang_dibawa_atau_melekat_pada_personal_anda_harus_terlebih_dahulu_mengisi_form_data_penggunaan_personal"
+                        android:textColor="@color/text_navy"
+                        android:textSize="13sp"
+                        android:textStyle="normal"
+                        tools:ignore="UnusedAttribute"/>
+
+                    <TextView
+                        android:id="@+id/TVDataPenggunaanPersonal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="10dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="start"
+                        android:text="@string/data_penggunaan_personal"
+                        android:textColor="@color/text_navy"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RVBeacon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="0dp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/LLTidakAdaBeacon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="75dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_beacon"
+                    app:tint="@color/icon_gray"
+                    tools:ignore="ContentDescription"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/tidak_ada_beacon"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/FABAddBeacon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:src="@drawable/icon_add"
+        app:backgroundTint="@color/background_orange"
+        app:maxImageSize="50dp"
+        app:rippleColor="@color/background_orange_disabled"
+        app:tint="@color/icon_white"
+        app:useCompatPadding="true"
+        tools:ignore="ContentDescription"/>
+
+</RelativeLayout>

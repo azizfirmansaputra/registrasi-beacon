@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/background_white"
+    android:orientation="vertical"
+    tools:context=".mainmenu.profil.tab.PenggunaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="@string/nama"
+                android:textColor="@color/text_black"
+                android:textSize="13sp"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/TVNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text=""
+                android:textColor="@color/text_black"
+                android:textSize="13sp"
+                android:textStyle="normal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="@string/alamat"
+                android:textColor="@color/text_black"
+                android:textSize="13sp"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/TVAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text=""
+                android:textColor="@color/text_black"
+                android:textSize="13sp"
+                android:textStyle="normal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="@string/nomor_telepon"
+                android:textColor="@color/text_black"
+                android:textSize="13sp"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/TVNomorTelepon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text=""
+                android:textColor="@color/text_black"
+                android:textSize="13sp"
+                android:textStyle="normal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="@string/mobile_phone"
+                android:textColor="@color/text_black"
+                android:textSize="13sp"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/TVMobilePhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text=""
+                android:textColor="@color/text_black"
+                android:textSize="13sp"
+                android:textStyle="normal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text="@string/email"
+                android:textColor="@color/text_black"
+                android:textSize="13sp"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/TVEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:text=""
+                android:textColor="@color/text_black"
+                android:textSize="13sp"
+                android:textStyle="normal"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

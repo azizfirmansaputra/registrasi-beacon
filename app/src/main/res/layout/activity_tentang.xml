@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/background_white"
+    android:orientation="vertical"
+    tools:context=".mainmenu.profil.TentangActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="25dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/text_navy"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:gravity="start"
+        android:justificationMode="inter_word"
+        android:text="@string/dalam_rangka_meningkatkan_respon_time_badan_sar_nasional_dalam_penanganan_musibah_penerbangan_pelayaran_dan_musibah_lainnya_badan_sar_nasional_mengoperasikan_peralatan_lut_mcc_local_user_terminal_mission_control_center_sebagai_sarana_deteksi_dini_lut_merupakan_ground_segment_dari_cospas_sarsat_yang_berfungsi_untuk_menerima_sinyal_distres_yang_dipancarkan_oleh_beacon"
+        android:textColor="@color/text_navy"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        tools:ignore="UnusedAttribute"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="25dp"
+        android:gravity="center"
+        android:text="@string/kontak"
+        android:textColor="@color/text_navy"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:gravity="center"
+        android:text="@string/jalan_angkasa_blok_b_15_kav_2_3_nkemayoran_jakarta_pusat_nindonesia_10720"
+        android:textColor="@color/text_navy"
+        android:textSize="16sp"
+        android:textStyle="normal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="25dp"
+        android:gravity="center"
+        android:text="@string/telp_amp_fax"
+        android:textColor="@color/text_navy"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:gravity="center"
+        android:text="@string/tel_62_21_6570_1116_nfax_62_21_6570_1116"
+        android:textColor="@color/text_navy"
+        android:textSize="16sp"
+        android:textStyle="normal"/>
+
+</LinearLayout>

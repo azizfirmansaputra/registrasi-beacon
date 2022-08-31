@@ -1,0 +1,19 @@
+pluginManagement {
+    repositories {
+        google()
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()//noinspection JcenterRepositoryObsolete
+        jcenter()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "Registrasi Beacon"
+include ':app'

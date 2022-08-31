@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.basarnas.registrasibeacon">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_launcher"
+        android:label="@string/app_name"
+        android:name=".tools.App"
+        android:roundIcon="@mipmap/icon_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RegistrasiBeacon"
+        android:usesCleartextTraffic="true"
+        tools:ignore="LockedOrientationActivity">
+
+        <activity
+            android:exported="true"
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.SplashScreen">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:exported="false"
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <activity
+            android:exported="false"
+            android:name=".DaftarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <activity
+            android:exported="false"
+            android:name=".LupaPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <activity
+            android:exported="true"
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:exported="false"
+            android:name=".mainmenu.beranda.BeaconActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:exported="false"
+            android:name=".mainmenu.armada.ArmadaActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:exported="false"
+            android:name=".mainmenu.profil.ubahprofil.UbahProfilActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:exported="false"
+            android:name=".mainmenu.profil.TentangActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:exported="false"
+            android:name=".mainmenu.NotifikasiActivity"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>

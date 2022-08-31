@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="0dp"
+    android:background="@color/background_white"
+    android:orientation="vertical"
+    tools:context=".mainmenu.NotifikasiActivity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/TLNotifikasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:tabIndicatorColor="@color/border_orange"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/text_orange"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        app:tabTextColor="@color/text_black">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/TIKadaluarsaRegistrasi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/kadaluarsa_registrasi"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/TIKadaluarsaBaterai"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/kadaluarsa_baterai"/>
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="@color/background_gray_dark"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/VPNotifikasi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    style="?attr/actionButtonStyle">
+
+    <ImageView
+        android:id="@+id/IVIcon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/icon_notifications"
+        app:tint="@color/icon_black"
+        tools:ignore="ContentDescription"/>
+
+    <TextView
+        android:id="@+id/TVBadge"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="end|top"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/background_badge"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="@string/nol"
+        android:textColor="@color/text_white"
+        android:textSize="10sp"
+        tools:ignore="SmallSp"/>
+
+</FrameLayout>
