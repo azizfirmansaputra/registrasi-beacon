@@ -1,2 +1,2 @@
-# registrasi-beacon
+# Regitrasi Beacon
 Registrasi Beacon
