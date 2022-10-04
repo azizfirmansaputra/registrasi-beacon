@@ -1,6 +1,7 @@
 package com.basarnas.registrasibeacon.mainmenu.beranda;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -61,8 +62,10 @@ public class BeaconActivity extends AppCompatActivity {
     ActivityResultLauncher<String> selectFileSuratPermohonan, selectInformasiRegistrasi;
     DatePickerDialog DPDTanggalKadaluarsaBaterai, DPDTanggal;
     ArrayList<String> listPenggunaanUntuk, listJenisBeacon;
+    ActivityResultLauncher<Intent> addPenggunaanUntuk;
     InputMethodManager inputMethodManager;
     Calendar calendar;
+    String IDBaeacon;
     Dialogs dialogs;
     int selectFile;
 
@@ -134,8 +137,8 @@ public class BeaconActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         spinnerPenggunaanUntuk();
+        addPenggunaanUntuk();
         App.generateToken();
-        checkDataBeacon();
         validationData();
         showDialogDate();
         processFile();
@@ -170,12 +173,29 @@ public class BeaconActivity extends AppCompatActivity {
                         }
                     }
                 }
-                TVTambahPenggunaanUntuk.setOnClickListener(view -> startActivity(new Intent(BeaconActivity.this, ArmadaActivity.class)));
+                checkDataBeacon();
             }
             catch(JSONException e){
                 e.printStackTrace();
             }
         }
+        else{
+            checkDataBeacon();
+        }
+
+        TVTambahPenggunaanUntuk.setOnClickListener(view -> addPenggunaanUntuk.launch(new Intent(BeaconActivity.this, ArmadaActivity.class).putExtra(Configs.Parameter_ID, IDBaeacon)));
+    }
+
+    private void addPenggunaanUntuk() {
+        addPenggunaanUntuk = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), result -> {
+            if(result.getResultCode() == Activity.RESULT_OK){
+                String namaPenggunaan   = result.getData().getStringExtra(Configs.Parameter_Nm_Penggunaan);
+                String spesifik         = result.getData().getStringExtra(Configs.Parameter_Spesifik);
+
+                listPenggunaanUntuk.add(String.format("-- %s | %s", namaPenggunaan, spesifik));
+                spinnerPenggunaanUntuk.setSelection(listPenggunaanUntuk.size() - 1);
+            }
+        });
     }
 
     private void checkDataBeacon() {
@@ -206,11 +226,11 @@ public class BeaconActivity extends AppCompatActivity {
                     JSONObject object = jsonArray.getJSONObject(i);
 
                     if(object.getString(Configs.Parameter_ID.toUpperCase()).equals(ID)){
-                        String IDBaeacon    = object.getString(Configs.Parameter_ID_Beacon.toUpperCase());
+                        IDBaeacon           = object.getString(Configs.Parameter_ID_Beacon.toUpperCase());
                         String kadaluarsa   = object.getString(Configs.Parameter_Tgl_Kadaluarsa.toUpperCase());
 
                         if(!kadaluarsa.equals("-")){
-                            String date     = kadaluarsa.replace("SEPT", "SEP").replace("AGUST", "AGU");
+                            String date     = kadaluarsa.replace("SEPT", "SEP").replace("AGUST", "AGT");
                             Date format     = new SimpleDateFormat("dd-MMM-yyyy", Locale.getDefault()).parse(date);
                             String newDate  = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault()).format(format);
 
@@ -243,6 +263,12 @@ public class BeaconActivity extends AppCompatActivity {
                             if(status){
                                 JSONArray jsonArray = new JSONArray(jsonObject.getString(Configs.Parameter_Data));
                                 JSONObject object   = jsonArray.getJSONObject(0);
+
+                                for(int i = 0; i < listPenggunaanUntuk.size(); i++){
+                                    if(listPenggunaanUntuk.get(i).equals("-- " + object.getString(Configs.Parameter_nmArmada).replace("-", "|"))){
+                                        spinnerPenggunaanUntuk.setSelection(i);
+                                    }
+                                }
 
                                 TIETIDBeacon.setText(object.getString(Configs.Parameter_idBeacon).equals("null") ? "" : object.getString(Configs.Parameter_idBeacon));
                                 TIETPembuat.setText(object.getString(Configs.Parameter_Pembuat).equals("null") ? "" : object.getString(Configs.Parameter_Pembuat));
@@ -295,8 +321,19 @@ public class BeaconActivity extends AppCompatActivity {
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                 if(textInputEditText.getId() == R.id.TIETIDBeacon){
-                    if(!getIntent().hasExtra(Configs.Parameter_ID)){
-                        checkIDBeacon();
+                    if(TIETIDBeacon.getText().length() < 15){
+                        TILIDBeacon.setErrorEnabled(true);
+                        TILIDBeacon.setError(getString(R.string.id_beacon_tidak_valid));
+                    }
+                    else{
+                        if(!getIntent().hasExtra(Configs.Parameter_ID)){
+                            checkIDBeacon();
+                        }
+                        else{
+                            if(!TIETIDBeacon.getText().toString().equalsIgnoreCase(IDBaeacon)){
+                                checkIDBeacon();
+                            }
+                        }
                     }
                 }
                 else if(textInputEditText.getId() == R.id.TIETTeleponKantorUtama){

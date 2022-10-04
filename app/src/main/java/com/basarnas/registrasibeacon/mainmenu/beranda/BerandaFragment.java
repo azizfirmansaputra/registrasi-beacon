@@ -117,13 +117,13 @@ public class BerandaFragment extends Fragment {
                     RVBeacon.setVisibility(View.VISIBLE);
 
                     if(!berlakuSampai.equals("-")){
-                        if(new Date().after(new SimpleDateFormat("dd-MMM-yyyy", Locale.getDefault()).parse(berlakuSampai.replace("SEPT", "SEP").replace("AGUST", "AGU")))){
+                        if(new Date().after(new SimpleDateFormat("dd-MMM-yyyy", Locale.getDefault()).parse(berlakuSampai.replace("SEPT", "SEP").replace("AGUST", "AGT")))){
                             mainActivity.notifikasiCount ++;
                         }
                     }
 
                     if(!kadaluarsaBaterai.equals("-")){
-                        if(new Date().after(new SimpleDateFormat("dd-MMM-yyyy", Locale.getDefault()).parse(kadaluarsaBaterai.replace("SEPT", "SEP").replace("AGUST", "AGU")))){
+                        if(new Date().after(new SimpleDateFormat("dd-MMM-yyyy", Locale.getDefault()).parse(kadaluarsaBaterai.replace("SEPT", "SEP").replace("AGUST", "AGT")))){
                             mainActivity.notifikasiCount ++;
                         }
                     }

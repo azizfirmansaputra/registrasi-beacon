@@ -1,5 +1,7 @@
 package com.basarnas.registrasibeacon.mainmenu.armada;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -282,8 +284,26 @@ public class ArmadaActivity extends AppCompatActivity {
                                 boolean status          = Boolean.parseBoolean(jsonObject.getString(Configs.Parameter_Status));
 
                                 if(status){
-                                    dialogs.dismiss();
-                                    finishAfterTransition();
+                                    if(getIntent().hasExtra(Configs.Parameter_ID)){
+                                        String namaPenggunaan   = spinnerPenggunaan.getSelectedItem().toString();
+                                        String spesifik         = spinnerSpesifik.getSelectedItem().toString();
+
+                                        if(String.valueOf(spinnerPenggunaan.getSelectedItemPosition()).equals(getString(R.string.lainnya))){
+                                            namaPenggunaan      = TIETPenggunaan.getText().toString();
+                                        }
+
+                                        if(String.valueOf(spinnerSpesifik.getSelectedItemPosition()).equals(getString(R.string.lainnya))){
+                                            spesifik            = TIETSpesifik.getText().toString();
+                                        }
+
+                                        dialogs.dismiss();
+                                        setResult(Activity.RESULT_OK, new Intent().putExtra(Configs.Parameter_Nm_Penggunaan, namaPenggunaan).putExtra(Configs.Parameter_Spesifik, spesifik));
+                                        finish();
+                                    }
+                                    else{
+                                        dialogs.dismiss();
+                                        finishAfterTransition();
+                                    }
                                 }
                                 else{
                                     dialogsError(getString(R.string.data_gagal_disimpan));

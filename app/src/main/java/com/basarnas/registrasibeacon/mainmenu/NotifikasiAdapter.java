@@ -99,10 +99,10 @@ public class NotifikasiAdapter extends RecyclerView.Adapter<NotifikasiAdapter.My
             SimpleDateFormat newFormat  = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
 
             if(kadaluarsa.equals(context.getString(R.string.kadaluarsa_registrasi))){
-                holder.TVDeskripsiStatus.setText(newFormat.format(format.parse(arrayListBeacon.get(position).getBerlakuSampai().replace("SEPT", "SEP").replace("AGUST", "AGU"))));
+                holder.TVDeskripsiStatus.setText(newFormat.format(format.parse(arrayListBeacon.get(position).getBerlakuSampai().replace("SEPT", "SEP").replace("AGUST", "AGT"))));
             }
             else{
-                holder.TVDeskripsiStatus.setText(newFormat.format(format.parse(arrayListBeacon.get(position).getKadaluarsaBaterai().replace("SEPT", "SEP").replace("AGUST", "AGU"))));
+                holder.TVDeskripsiStatus.setText(newFormat.format(format.parse(arrayListBeacon.get(position).getKadaluarsaBaterai().replace("SEPT", "SEP").replace("AGUST", "AGT"))));
             }
         }
         catch(ParseException e){

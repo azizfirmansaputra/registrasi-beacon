@@ -24,11 +24,40 @@
         android:textStyle="bold"
         android:visibility="gone"/>
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CVUjiFungsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TVDaftarUjiFungsi"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/background_white"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/background_white"
+        app:cardCornerRadius="4dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="0dp">
+
+        <CheckBox
+            android:id="@+id/CBUjiFungsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:text="@string/pilih_semua"
+            android:textColor="@color/text_black"
+            android:textSize="16sp"
+            android:textStyle="normal"/>
+
+    </androidx.cardview.widget.CardView>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/RVUjiFungsi"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/TVDaftarUjiFungsi"
+        android:layout_below="@id/CVUjiFungsi"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginTop="0dp"

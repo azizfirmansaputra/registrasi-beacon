@@ -184,4 +184,8 @@
     <string name="form_registrasi_baru">Form Registrasi Baru</string>
     <string name="form_perubahan_informasi">Form Perubahan Informasi</string>
     <string name="id_beacon_tidak_valid">ID Beacon tidak valid</string>
+    <string name="permanen">Permanen</string>
+    <string name="portable">Portable</string>
+    <string name="pilih_semua">Pilih Semua</string>
+    <string name="pilih_data_yang_akan_diuji">Pilih data yang akan diuji</string>
 </resources>

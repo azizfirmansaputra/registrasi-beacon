@@ -107,8 +107,10 @@ public class Configs {
     public static String Parameter_sel2                     = "sel2";
     public static String Parameter_fileSrtMohon             = "fileSrtMohon";
     public static String Parameter_fileSrtIzin              = "fileSrtIzin";
-    public static String Value_Username                     = "beaconAdmin";
-    public static String Value_Password                     = "Admin";
+    public static String Parameter_nmArmada                 = "nmArmada";
+
+    public static String Value_Username                     = "Bambang05";
+    public static String Value_Password                     = "123456";
     public static String Value_Surat_Permohonan             = "1";
     public static String Value_Surat_Izin                   = "2";
     public static String Value_Surat_Penunjukan             = "3";

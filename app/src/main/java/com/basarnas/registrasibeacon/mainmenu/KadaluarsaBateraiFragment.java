@@ -93,7 +93,7 @@ public class KadaluarsaBateraiFragment extends Fragment {
                     String hasil                = object.getString(Configs.Parameter_Hasil.toUpperCase());
 
                     if(!kadaluarsaBaterai.equals("-")){
-                        if(new Date().after(new SimpleDateFormat("dd-MMM-yyyy", Locale.getDefault()).parse(kadaluarsaBaterai.replace("SEPT", "SEP").replace("AGUST", "AGU")))){
+                        if(new Date().after(new SimpleDateFormat("dd-MMM-yyyy", Locale.getDefault()).parse(kadaluarsaBaterai.replace("SEPT", "SEP").replace("AGUST", "AGT")))){
                             arrayListBeacon.add(new Beacon(ID, reg, callSign, noSertifikat, IDBeacon, jenisData, kategori,berlakuSampai, kadaluarsaBaterai, statusBeacon, isVerifikasi, statusUji, formulir, hasil));
                             notifikasiAdapter.notifyItemChanged(i);
 

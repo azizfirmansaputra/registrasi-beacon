@@ -4,7 +4,9 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
@@ -15,17 +17,22 @@ import com.basarnas.registrasibeacon.R;
 import java.util.ArrayList;
 
 public class UjiFungsiAdapter extends RecyclerView.Adapter<UjiFungsiAdapter.MyView> {
+    private final boolean selectAll;
     private final Context context;
     private final ArrayList<UjiFungsi> arrayListUjiFungsi;
+    public final UjiFungsiFragment ujiFungsiFragment;
 
-    public UjiFungsiAdapter(Context context, ArrayList<UjiFungsi> arrayListUjiFungsi) {
+    public UjiFungsiAdapter(Context context, ArrayList<UjiFungsi> arrayListUjiFungsi, boolean selectAll, UjiFungsiFragment ujiFungsiFragment) {
         this.context            = context;
         this.arrayListUjiFungsi = arrayListUjiFungsi;
+        this.selectAll          = selectAll;
+        this.ujiFungsiFragment  = ujiFungsiFragment;
     }
 
     public static class MyView extends RecyclerView.ViewHolder {
         TextView TVIDBeacon, TVKeteranganStatus, TVCallSign, TVTanggalBeacon;
         CardView CVKeteranganStatus;
+        CheckBox CBUjiFungsi;
 
         public MyView(@NonNull View itemView) {
             super(itemView);
@@ -35,6 +42,7 @@ public class UjiFungsiAdapter extends RecyclerView.Adapter<UjiFungsiAdapter.MyVi
             TVCallSign          = itemView.findViewById(R.id.TVCallSign);
             TVTanggalBeacon     = itemView.findViewById(R.id.TVTanggalBeacon);
             CVKeteranganStatus  = itemView.findViewById(R.id.CVKeteranganStatus);
+            CBUjiFungsi         = itemView.findViewById(R.id.CBUjiFungsi);
         }
     }
 
@@ -64,6 +72,25 @@ public class UjiFungsiAdapter extends RecyclerView.Adapter<UjiFungsiAdapter.MyVi
                 holder.CVKeteranganStatus.setCardBackgroundColor(context.getColor(R.color.background_green));
                 break;
         }
+
+        holder.CBUjiFungsi.setOnCheckedChangeListener((compoundButton, b) -> {
+            if(compoundButton.isChecked()){
+                ujiFungsiFragment.arrayListIDUjiFungsi.add(arrayListUjiFungsi.get(position).getID());
+
+                if(arrayListUjiFungsi.size() == ujiFungsiFragment.arrayListIDUjiFungsi.size()){
+                    ujiFungsiFragment.setSelect(true);
+                }
+            }
+            else{
+                ujiFungsiFragment.arrayListIDUjiFungsi.remove(arrayListUjiFungsi.get(position).getID());
+
+                if(ujiFungsiFragment.arrayListIDUjiFungsi.size() == 0){
+                    ujiFungsiFragment.setSelect(false);
+                }
+            }
+        });
+
+        holder.CBUjiFungsi.setChecked(selectAll);
     }
 
     @Override
